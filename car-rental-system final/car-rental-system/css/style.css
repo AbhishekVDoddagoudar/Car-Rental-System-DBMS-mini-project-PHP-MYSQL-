@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+   /* background-color: rgba(0, 0, 0, 0.795);*/
+   background-color:  black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 8px 34px;
+}
+
+#logo img{
+    height: 68px;
+    margin: 3px 6px;
+}
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:whitesmoke;
+    text-decoration: underline;
+}
+
+
+.bg .home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg .home::before{ 
+    content: "";
+    position: absolute;
+   background: url('../img/black-luxury-car-shadow-headlights.jpeg') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.bg .home h1{
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 200px;
+    margin-right: 600px;
+    /*font-family: 'Bree Serif', serif;*/
+}
+
+.bg .home p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 600px;
+   /* font-family: 'Bree Serif', serif;*/
+}
+
+/*.btn{
+    padding: 6px 20px;
+    color:black;
+    margin: 17px;
+    font-size: 25px;
+    border-radius: 10px 10px 10px;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-right: 600px;
+    
+}*/
+.login{
+    display: flex;
+    position: absolute;
+    right: 35px;
+}
+.item2{
+    margin: 0px 5px;
+    padding: 1px 1px;
+}
+
+/*
+body {
+	font-size: 120%;
+	background: #F8F8FF;
+}*/
+.header {
+	width: 30%;
+	margin: 50px auto 0px;
+	color: white;
+   margin-right: 150px;
+   margin-top: 15px;
+	background: #0b1111;
+	text-align: center;
+	border: 1px solid white;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+}
+form, .content {
+	width: 30%;
+	margin: 0px auto;
+    margin-right: 150px;
+    padding-top: 2px;
+	padding: 20px;
+	border: 1px solid white;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+    font-size: 16px;
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+#user_type {
+	height: 40px;
+	width: 98%;
+	padding: 5px 10px;
+	background: white;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.btn {
+	padding: 8px;
+    margin-top: 5px;
+	font-size: 25px;
+	color: white;
+	background: black;
+	border: 1px solid white;
+    cursor:pointer;
+	border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.btn:hover {
+	padding: 8px;
+    margin-top: 5px;
+	font-size: 25px;
+	color: white;
+    text-decoration: underline;
+    cursor:pointer;
+	border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.btn2 {
+	padding: 10px;
+	font-size: 25px;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+    cursor:pointer;
+	border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 1s;
+    margin-right: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn2:hover {
+	color: black;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    cursor:pointer;
+    	/* padding: 10px;
+	font-size: 25px; */
+	/* background: white; */
+    /* transition: background-color 0.5s ease-in-out; */
+    /* text-decoration: underline; */
+	/* border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 600px; */
+}
+/*
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}*/
+
+.clbg::before{
+    content: "";
+    position: absolute;
+    background: url('../img/black2-luxury-car-shadow-headlights.jpeg') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+}
+.clbgbook::before{
+    content: "";
+    position: absolute;
+    background: white;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+}
+#signuphere{
+    font-size: 23px;
+    margin-left: 250px;
+}
+/* .rent {
+    color: white;
+    text-decoration: none;
+} */
+/* .top-navigation{
+    color:white;
+} */
+.properties{
+    margin-left: 40px;
+}
+#clientlogout{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
